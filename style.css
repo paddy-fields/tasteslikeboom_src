@@ -1,0 +1,532 @@
+@charset "UTF-8";
+/*
+Theme Name: Tastes Like Boom
+Theme URI: http://wordpress.org/themes/blankslate
+Author: Patrick Hurley
+Author URI: http://patrickhurley.co.uk/
+Description: Theme for Tastes Like Boom
+Version: 4.0.3
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: black, blue, white, light, one-column, fluid-layout, responsive-layout, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2015 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+.clear {
+  clear: both; }
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important; }
+
+/*-----------------------------------------------------------------------------------
+
+  tasteslikeboom.com
+
+  Author: Patrick Hurley
+
+-----------------------------------------------------------------------------------
+
+  1.  Colours and Fonts
+  2.  Screen layouts
+  3.  Navigation
+  4.  Section 1
+  5.  Section 2
+  6.  Section 3
+  7.  Section 4
+  8.  Section 5
+
+  
+-----------------------------------------------------------------------------------*/
+.mt--10 {
+  margin-top: -10px; }
+
+.mt--15 {
+  margin-top: -15px; }
+
+.mt--20 {
+  margin-top: -20px; }
+
+.mt--25 {
+  margin-top: -25px; }
+
+.mt--30 {
+  margin-top: -30px; }
+
+.mt--40 {
+  margin-top: -40px; }
+
+.mt--50 {
+  margin-top: -50px; }
+
+.mt--60 {
+  margin-top: -60px; }
+
+.mt--70 {
+  margin-top: -70px; }
+
+.mt--80 {
+  margin-top: -80px; }
+
+.mt--90 {
+  margin-top: -90px; }
+
+.mt--100 {
+  margin-top: -100px; }
+
+.mt-10 {
+  margin-top: 10px; }
+
+.mt-15 {
+  margin-top: 15px; }
+
+.mt-20 {
+  margin-top: 20px; }
+
+.mt-25 {
+  margin-top: 25px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-40 {
+  margin-top: 40px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.mt-60 {
+  margin-top: 60px; }
+
+.mt-70 {
+  margin-top: 70px; }
+
+.mt-80 {
+  margin-top: 80px; }
+
+.mt-90 {
+  margin-top: 90px; }
+
+.mt-100 {
+  margin-top: 100px; }
+
+.mb--10 {
+  margin-bottom: -10px; }
+
+.mb--15 {
+  margin-bottom: -15px; }
+
+.mb--20 {
+  margin-bottom: -20px; }
+
+.mb--25 {
+  margin-bottom: -25px; }
+
+.mb--30 {
+  margin-bottom: -30px; }
+
+.mb--40 {
+  margin-bottom: -40px; }
+
+.mb--50 {
+  margin-bottom: -50px; }
+
+.mb--60 {
+  margin-bottom: -60px; }
+
+.mb--70 {
+  margin-bottom: -70px; }
+
+.mb--80 {
+  margin-bottom: -80px; }
+
+.mb--90 {
+  margin-bottom: -90px; }
+
+.mb--100 {
+  margin-bottom: -100px; }
+
+.mb-10 {
+  margin-bottom: 10px; }
+
+.mb-15 {
+  margin-bottom: 15px; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mb-25 {
+  margin-bottom: 25px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
+
+.mb-40 {
+  margin-bottom: 40px; }
+
+.mb-50 {
+  margin-bottom: 50px; }
+
+.mb-60 {
+  margin-bottom: 60px; }
+
+.mb-70 {
+  margin-bottom: 70px; }
+
+.mb-80 {
+  margin-bottom: 80px; }
+
+.mb-90 {
+  margin-bottom: 90px; }
+
+.mb-100 {
+  margin-bottom: 100px; }
+
+/*-----------------------------------------------------------------------------------*/
+/*  1.  Colours and Fonts
+/*-----------------------------------------------------------------------------------*/
+/* Fonts */
+@font-face {
+  font-family: GT-Pressura-Bold;
+  src: url("fonts/GT-Pressura-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/GT-Pressura-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/GT-Pressura-Bold.woff") format("woff"), url("fonts/GT-Pressura-Bold.ttf") format("truetype"); }
+
+p {
+  font-family: "Space Mono", monospace; }
+
+p {
+  line-height: 18px;
+  font-size: 14px; }
+  @media (max-width: 576px) {
+    p {
+      font-size: 11px;
+      line-height: 11px; } }
+  @media (min-width: 577px) and (max-width: 767px) {
+    p {
+      font-size: 13px;
+      line-height: 16px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    p {
+      font-size: 13px;
+      line-height: 14px; } }
+
+h2, h3, h4 {
+  font-family: GT-Pressura-Bold; }
+
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 30px; } }
+
+h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 28px;
+  margin-bottom: 10px; }
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 20px;
+      margin-top: 25px; } }
+
+h4 {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 5px; }
+  @media (max-width: 576px) {
+    h4 {
+      margin-top: 10px; } }
+
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
+img {
+  width: 100%; }
+
+.shade1 {
+  background: rgba(255, 255, 255, 0.9); }
+  .shade1 p, .shade1 h2, .shade1 h3 {
+    color: #1E1E1E; }
+
+.shade2 {
+  background: rgba(0, 0, 0, 0.8); }
+  .shade2 p, .shade2 h2, .shade2 h3 {
+    color: #ffffff; }
+
+/*-----------------------------------------------------------------------------------*/
+/*  2.  Screen layouts
+/*-----------------------------------------------------------------------------------*/
+.content-block {
+  position: relative;
+  height: 100vh;
+  margin-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.content-block-inner {
+  text-align: center;
+  width: 70%; }
+  @media (max-width: 576px) {
+    .content-block-inner {
+      width: 90%; } }
+  @media (min-width: 577px) and (max-width: 767px) {
+    .content-block-inner {
+      width: 70%; } }
+
+.content-block-foot {
+  height: 40px;
+  margin-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.half-width {
+  width: 50vw; }
+  @media (max-width: 767px) {
+    .half-width {
+      width: 100vw; } }
+
+.full-width {
+  width: 100vw; }
+
+.left-align {
+  float: left; }
+
+.right-align {
+  float: right; }
+
+.line-black {
+  width: 100%;
+  height: 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+  margin-bottom: 1.2em; }
+
+.item {
+  height: 100px;
+  width: 30px;
+  background: #FFD57A;
+  border: solid; }
+
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.section {
+  position: relative; }
+
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none; } }
+
+/*-----------------------------------------------------------------------------------*/
+/*  3.  Navigation
+/*-----------------------------------------------------------------------------------*/
+.switch-menu {
+  -webkit-transform: translateX(-50vw);
+  transform: translateX(-50vw); }
+  @media (max-width: 767px) {
+    .switch-menu {
+      -webkit-transform: translateY(100vh);
+      transform: translateY(100vh); } }
+
+.barb, .barc {
+  background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.barb {
+  background: url("img/menu-open.svg");
+  background-size: 100%; }
+
+.barc {
+  background: url("img/menu-close.svg");
+  background-size: 100%; }
+
+.holder {
+  cursor: pointer;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 60px;
+  right: 60px;
+  z-index: 2;
+  display: block; }
+  @media (max-width: 767px) {
+    .holder {
+      top: 20px;
+      right: 20px; } }
+
+.menu {
+  width: 50vw;
+  height: 100vh;
+  overflow: auto;
+  position: absolute;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  top: 0;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-transition: 500ms cubic-bezier(0.7, 0, 0.3, 1) all;
+  transition: 500ms cubic-bezier(0.7, 0, 0.3, 1) all; }
+  @media (max-width: 767px) {
+    .menu {
+      left: 0;
+      top: -100%;
+      width: 100vw; } }
+  .menu li {
+    font-size: 45px;
+    font-family: GT-Pressura-Bold;
+    letter-spacing: -2px;
+    text-align: center;
+    text-align: left;
+    line-height: 100%;
+    text-transform: uppercase; }
+    @media (max-width: 767px) {
+      .menu li {
+        font-size: 30px;
+        margin-bottom: 5vh; } }
+    .menu li:not(:last-child) {
+      margin-bottom: 4vh; }
+
+.menu--inner {
+  text-align: center;
+  width: 50%; }
+
+.social-media a:not(:last-child) {
+  margin-right: 10px; }
+
+.social-media img {
+  width: 30px;
+  display: inline-block; }
+
+/*-----------------------------------------------------------------------------------*/
+/*  4.  Section 1
+/*-----------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+  #section1 .content-block-logo {
+    padding: 0 70px; } }
+
+.site-logo {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding-top: 10px; }
+  .site-logo .boom-sublogo {
+    padding-left: 10px;
+    width: 96%; }
+
+.boom-logo-small {
+  width: 150px;
+  padding-bottom: 15px; }
+
+/*-----------------------------------------------------------------------------------*/
+/*  5.  Section 2
+/*-----------------------------------------------------------------------------------*/
+#section2 br {
+  display: block;
+  margin: 3px 0; }
+
+/*-----------------------------------------------------------------------------------*/
+/*  6.  Section 3
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*  7.  Section 4
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*  8.  Section 5
+/*-----------------------------------------------------------------------------------*/
+.google-map {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+/*-----------------------------------------------------------------------------------*/
+/*  9.  Bottom Logo
+/*-----------------------------------------------------------------------------------*/
+.bottom-logo {
+  width: 150px;
+  position: absolute;
+  image-rendering: -webkit-optimize-contrast; }
+  @media (max-width: 767px) {
+    .bottom-logo {
+      display: none; } }
+
+.right-align .bottom-logo {
+  left: -72px;
+  bottom: 10px; }
+
+.left-align .bottom-logo {
+  right: -77px;
+  bottom: 10px; }
